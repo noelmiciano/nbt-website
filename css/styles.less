@@ -1,15 +1,16 @@
 // LESS
 
-@the-border: 1px;
-@base-color: #111;
+@font-family: 'arial';
+@green:      #009900;
 @red:        #842210;
 
-#header {
-  color: (@base-color * 3);
-  border-left: @the-border;
-  border-right: (@the-border * 2);
+#top-text {
+  color: @green;
+  font-family: @font-family;
+  font-size: 2em;
 }
-#footer {
-  color: (@base-color + #003300);
-  border-color: desaturate(@red, 10%);
+#bottom-text {
+  color: @red;
+  font-family: @font-family;
+  font-size: 1.5em;
 }
