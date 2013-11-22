@@ -57,11 +57,13 @@ nav {
 
 section {
 	width: 100%;
+	margin: 0;
 	padding-bottom: 50px;
 }
 
 h1 {
-		text-align: center;
+	margin: 0;
+	text-align: center;
 }/*h1*/
 	
 	
@@ -80,6 +82,11 @@ h1 {
 	text-transform: uppercase;
 }
 
+.content {
+	margin: 0 auto;
+	width: 90%;
+}
+
 /***** PORTFOLIO *****/
 #portfolio-front {
 	.logo {
@@ -90,14 +97,11 @@ h1 {
 	ul {
 		margin: 0 auto;
 		padding: 0;
-		width: 960px;
-				
-		.portfolio-thumb {
-			margin-right: 10px;
-			margin-bottom: 15px;
+		width: 90%;
+
+		img {
+			margin: 10px;
 			padding: 0;
-			width: 290px;
-			height: 200px;
 			display: inline-block;
 			vertical-align: top;
 			background: #fff;
@@ -118,15 +122,45 @@ h1 {
 #services {
 	background: #c5c5c5;
 	
-	ul {
+	.service-sections {
 		margin: 0 auto;
 		padding: 0;
-		width: 960px;
+		width: 90%;
+		
+		ul {
+			margin: 0;
+			padding: 0;
+			display: inline-block;
+			vertical-align: top;
+			
+			li {
+				margin: 0 35px;
+				padding: 0;
+			}/*li*/
+		}/*ul*/
+		
+	}/*service-sections*/	
+	
+}/*services*/
+
+/***** ABOUT *****/
+#about {
+	background: #b5b5b5;
+	
+	p {
+		margin: 0 auto;
+		width: 80%;
+	}
+	
+	ul.mugshots {
+		margin: 0 auto;
+		padding: 0;
+		width: 850px;
 		
 		li {
 			margin: 10px 0;
 			padding: 0;
-			width: 100%;
+			width: 205px;
 			height: 100px;
 			display: inline-block;
 			vertical-align: top;
@@ -134,3 +168,35 @@ h1 {
 		}/*li*/
 	}/*ul*/
 }/*services*/
+
+/***** CONTACT *****/
+#contact-container {
+	margin: 0 auto;
+	padding: 0;
+	width: 850px;
+	border: 1px dotted gray;
+	
+	#contact-will {
+		margin-right: 20px;
+	}/*contact-will*/
+	
+	.contact-box {
+		margin: 0;
+		padding: 0;
+		width: 350px;
+		display: inline-block;
+		vertical-align: top;
+		background: #fff;
+		border: 1px dotted red;
+	}/*.contact-box*/
+}/*contact-container*/
+
+/***** FOOTER *****/
+footer {
+	padding: 20px 0;
+	background: #000;
+	p {
+		color: #fff;
+		text-align: center;
+	}
+}
