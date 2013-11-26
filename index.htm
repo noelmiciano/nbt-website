@@ -28,12 +28,12 @@
 	<nav>
 		<div id="navigation">
 			<ul id="nav">
-   <li class="nav-link"><a href="#" onclick="$('#logo-area').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">Home</a></li>
-   <li class="nav-link"><a href="#" onclick="$('#services').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">Services</a></li>
-   <li class="nav-link"><a href="#" onclick="$('#portfolio-front').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">Portfolio</a></li>
-   <li class="nav-link"><a href="#" onclick="$('#about').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">About Us</a></li>
-   <li class="nav-link"><a href="#" onclick="$('#careers').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">Careers</a></li>
-   <li class="nav-link"><a href="http://nbtblog.wordpress.com/">Blog</a></li>
+   <li><a class="nav-link" href="#" onclick="$('#logo-area').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">Home</a></li>
+   <li><a class="nav-link" href="#" onclick="$('#services').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">Services</a></li>
+   <li><a class="nav-link" href="#" onclick="$('#portfolio-front').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">Portfolio</a></li>
+   <li><a class="nav-link" href="#" onclick="$('#about').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">About Us</a></li>
+   <li><a class="nav-link" href="#" onclick="$('#careers').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">Careers</a></li>
+   <li><a class="nav-link" href="http://nbtblog.wordpress.com/">Blog</a></li>
 			</ul>
 		</div><!-- navigation -->
 	</nav><!-- nav -->
@@ -163,6 +163,20 @@
 		<!-- Scripts -->
         <script type="text/javascript" src="js/vendor/less-1.5.0.min.js"></script>
         <script type="text/javascript" src="js/animatescroll.js"></script>
+
+    <script type="text/javascript">
+
+$(document).ready(function() {
+
+      $(' .nav-link ').click(function(){
+
+      $(' .nav-link ').removeClass( 'active' );
+
+      $(this).addClass( 'active' );
+
+      });
+});
+    </script>
 
 		<!-- Google Analytics (async): change UA-XXXXXXXX-XX to be your sites
 			 ID, and yourdomain.com to be your sites domain name. -->
