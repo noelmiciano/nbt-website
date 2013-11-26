@@ -6,8 +6,8 @@
 		<meta http-equiv="ClearType" content="true">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Favicon.ico -->
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
+                <!-- Favicon.ico -->
+                <link rel="icon" href="favicon.ico" type="image/x-icon">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 		<!-- DNS prefetch -->
@@ -24,26 +24,32 @@
 
 	</head>
 	<body>
-	
+
 	<nav>
 		<div id="navigation">
 			<ul id="nav">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="services.html">Services</a></li>				
-				<li><a href="portfolio.html">Portfolio</a></li>	
-				<li><a href="about.html">About Us</a></li>
-				<li><a href="careers.html">Careers</a></li>
-				<li><a href="http://nbtblog.wordpress.com/">Blog</a></li>
+   <li class="nav-link"><a href="#" onclick="$('#logo-area').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">Home</a></li>
+   <li class="nav-link"><a href="#" onclick="$('#services').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">Services</a></li>
+   <li class="nav-link"><a href="#" onclick="$('#portfolio-front').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">Portfolio</a></li>
+   <li class="nav-link"><a href="#" onclick="$('#about').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">About Us</a></li>
+   <li class="nav-link"><a href="#" onclick="$('#careers').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});">Careers</a></li>
+   <li class="nav-link"><a href="http://nbtblog.wordpress.com/">Blog</a></li>
 			</ul>
 		</div><!-- navigation -->
 	</nav><!-- nav -->
 
-		<!-- PORTFOLIO -->
-		<section id="portfolio-front">
+                <section id="logo-area">  <!-- logo area -->
+
 			<div class="content">
 				<img class= "logo" src="img/logo.png" width="516" height="210">
 				<h1>Mapping Applications For Your Business</h1>
-			
+			</div><!-- logo area -->
+
+		</section><!-- logo area -->
+
+		<!-- PORTFOLIO -->
+		<section id="portfolio-front">
+			<div class="content">
 				<ul class="thumbnails">
 					<img src="img/maine_health.png" width="280" height="180">
 					<img src="img/estuary.png" width="280" height="180">
@@ -156,6 +162,7 @@
 
 		<!-- Scripts -->
         <script type="text/javascript" src="js/vendor/less-1.5.0.min.js"></script>
+        <script type="text/javascript" src="js/animatescroll.js"></script>
 
 		<!-- Google Analytics (async): change UA-XXXXXXXX-XX to be your sites
 			 ID, and yourdomain.com to be your sites domain name. -->
