@@ -19,7 +19,6 @@
 		<meta name="description" content="">
 
 		<!-- Styles -->
-		<link type="text/css" rel="stylesheet" href="css/styles.css">
 		<link type="text/css" rel="stylesheet/less" href="css/styles.less">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 
@@ -31,7 +30,7 @@
    		<nav>
 			<div id="navigation">
 				<ul id="nav">
-					<li class="nav-link"><a href="#">Home</a></li>
+					<li class="nav-link"><a href="#" onclick="$('#logo-area').animatescroll();">Home</a></li>
 					<li class="nav-link"><a href="#" onclick="$('#services').animatescroll();">Services</a></li>
 					<li class="nav-link"><a href="#" onclick="$('#portfolio-front').animatescroll();">Portfolio</a></li>
 					<li class="nav-link"><a href="#" onclick="$('#about').animatescroll();">About Us</a></li>
@@ -40,13 +39,20 @@
 				</ul>
 			</div><!-- navigation -->
 		</nav><!-- End nav -->
-		
-		<!-- PORTFOLIO -->
-		<section id="portfolio-front">
+
+		<section id="logo-area">  <!-- logo area -->
+
 			<div class="content">
 				<img class= "logo" src="img/logo.png" width="516" height="210">
 				<h1>Mapping Applications For Your Business</h1>
-			
+			</div><!-- logo area -->
+
+		</section><!-- logo area -->
+
+		<!-- PORTFOLIO -->
+		<section id="portfolio-front">
+			<div class="content">
+
 				<ul class="thumbnails">
 					<img src="img/maine_health.png" width="280" height="180">
 					<img src="img/estuary.png" width="280" height="180">
@@ -59,7 +65,7 @@
 				<a class="red-button" href="#">More Works</a>
 			</div><!-- content -->
 		</section><!-- portfolio-front -->
-		
+
 		<!-- NEWS -->
 		<section id="news">
 			<div class="content">
@@ -153,7 +159,7 @@
 		<footer>
 			<p class="copyright">Copyright © 2013 NBT Solutions, LLC.</p>
 		</footer>
-		
+
    </div><!-- wrapper -->
 
 		<!-- jQuery -->

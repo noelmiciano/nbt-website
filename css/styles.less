@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #e8e8e8;
-	@body-font: 'Open Sans', Helvetica, Arial, sans-serif; 
+	@body-font: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-family: @body-font;
 }
 
@@ -12,8 +12,7 @@ nav {
 	padding: 0;
 	width: 100%;
 	background: #000;
-	vertical-align: top;
-	display: inline-block;
+	position: fixed;
 	
 	#navigation {
 		margin: 0;
@@ -51,7 +50,7 @@ nav {
 			}/*li*/
 		}/*#nav*/
 		
-		
+
 	}/*#navigation*/
 }/*nav*/
 
@@ -59,6 +58,7 @@ section {
 	width: 100%;
 	margin: 0;
 	padding-bottom: 50px;
+	padding-top: 55px;
 }
 
 h1 {
@@ -87,13 +87,17 @@ h1 {
 	width: 90%;
 }
 
-/***** PORTFOLIO *****/
-#portfolio-front {
+/***** LOGO AREA *****/
+
+#logo-area {
 	.logo {
 		display: block;
 		margin: 50px auto;
 	}/*logo*/
-	
+}
+/***** PORTFOLIO *****/
+#portfolio-front {
+
 	ul {
 		margin: 0 auto;
 		padding: 0;
