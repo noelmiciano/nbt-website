@@ -1,7 +1,18 @@
+/*************** LESS VARIABLES *************/
+.rounded-corners (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+@red-color: #b31f24;
+
+/********** END LESS VARIABLES *********/
+
 .career {
 	margin-top: 100px;
 	h2 {
-		color: #b31f24;
+		color: @red-color;
 		font-weight: 700;
 	}/*h2*/
 	
@@ -19,7 +30,7 @@
 		li {
 			margin: 0 35px;
 			padding: 0;
-			color: #b82d44;
+			color: @red-color;
 			
 			span {
 				color: #000;

@@ -1,7 +1,20 @@
+
+/*************** LESS VARIABLES *************/
+.rounded-corners (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+@red-color: #b31f24;
+
+/********** END LESS VARIABLES *********/
+
+
 .portfolio {
 	margin-top: 100px;
 	h1.category {
-		color: #b31f24;
+		color: @red-color;
 		font-weight: 700;
 	}/*category*/
 		
@@ -15,7 +28,7 @@
 			background: #fff;
 			border: 8px solid #d0d0d0;
 			&:hover {
-				border-color: #b31f24;
+				border-color: @red-color;
 			}/*hover*/
 		}/*img*/
 	

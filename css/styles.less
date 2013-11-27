@@ -6,6 +6,18 @@ body {
 	font-family: @body-font;
 }
 
+/*************** LESS VARIABLES *************/
+.rounded-corners (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+@red-color: #b31f24;
+
+/********** END LESS VARIABLES *********/
+
+
 /***** NAVIGATION *****/
 nav {
 	margin: 0;
@@ -47,7 +59,7 @@ nav {
 					text-decoration: none;
 					text-transform: uppercase;
 					&:hover {
-						background: #b31f24;
+						background: @red-color;
 					}/*hover*/
 				}/*a*/
 			}/*li*/
@@ -59,7 +71,7 @@ nav {
 
 .active{
 height: 60px;
-background: #b31f24;
+background: @red-color;
 }
 
 section {
@@ -79,18 +91,22 @@ h1 {
 	
 	
 .red-button {
+	.rounded-corners;
 	margin: 0 auto;
 	padding: 0;
 	color: #fff;
 	display: block;
 	width: 270px;
 	height: 53px;
-	background: #b31f24;
+	background: @red-color;
 	text-align: center;
 	vertical-align: middle;
 	line-height: 53px;  /* same as div height */
 	text-decoration: none;
 	text-transform: uppercase;
+	&:hover {
+		background: lighten(@red-color, 10%);	
+	}
 }
 
 .content {
@@ -126,7 +142,7 @@ h1 {
 			background: #fff;
 			border: 8px solid #d0d0d0;
 			&:hover {
-				border-color: #b31f24;
+				border-color: @red-color;
 			}/*hover*/
 		}/*portfolio-thumb*/
 	}/*ul*/
@@ -163,7 +179,7 @@ h1 {
 			li {
 				margin: 0 35px;
 				padding: 0;
-				color: #b82d44;
+				color: @red-color;
 				span {
 					color: #000;
 				}/*span*/
@@ -189,9 +205,21 @@ h1 {
 		width: 700px;/*63%;*/
 		/*border: 1px dotted red;*/
 		
-		img {
-			margin: 10px;
-		}/*img*/
+		.mugshot {
+		
+			img {
+				margin: 10px;
+			}/*img*/
+			
+			h3 {
+				
+			}/*h3*/
+			
+			p {
+				
+			}/*p*/
+			
+		}/*mugshot*/
 	}/*pic-container*/
 }/*services*/
 
@@ -203,12 +231,13 @@ h1 {
 	/*border: 1px dotted red;*/
 	
 	.contact-box {
+		.rounded-corners;
 		margin: 10px;
 		padding: 10px;
-		width: 45%;
+		width: 43%;
 		display: inline-block;
 		vertical-align: top;
-		background: #d8d8d8;
+		background: #f8f8f8;
 		
 		h3 {
 			margin: 0;
