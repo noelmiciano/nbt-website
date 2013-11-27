@@ -53,7 +53,7 @@ nav {
 					margin: 0;
 					padding: 0;
 					color: #fff;
-					width: 160px;
+					width: 192px;
 					height: 60px;
 					text-align: center;
 					vertical-align: middle;
@@ -84,7 +84,6 @@ a:active {
 
 a:hover { color: lighten(@red-color, 10%); }
 
-
 .active{
 height: 60px;
 background: @red-color;
@@ -97,50 +96,31 @@ section {
 	padding-top: 60px;
 }
 
-h1 {
-	margin: 30px auto;
-	text-align: center;
-	font-size: 1.5em;
-	font-weight: 400;
-	color: #333;
-}/*h1*/
-	
-	
-.red-button {
-	.rounded-corners;
-	margin: 20px auto;
-	padding: 0;
-	color: #fff !important;
-	display: block;
-	width: 270px;
-	height: 53px;
-	background: @red-color;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 53px;  /* same as div height */
-	text-decoration: none;
-	text-transform: uppercase;
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
-	&:hover {
-		background: lighten(@red-color, 10%);	
-	}
-}
-
 .content {
 	margin: 0 auto;
-	width: 90%;
+	width: 960px;
 	/*border: 1px dotted steelblue;*/
 }
 
+h1 {
+	margin: 20px auto;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 700;
+	color: @red-color;
+}/*h1*/
+	
 /***** LOGO AREA *****/
 
 #logo-area {
-	.logo {
-		display: block;
-		margin: 50px auto;
-	}/*logo*/
+	padding-bottom: 0;
+	.content {
+		padding-top: 30px;
+		.logo {
+			display: block;
+			margin: 50px auto;
+		}/*logo*/
+	}
 }
 
 /***** PORTFOLIO *****/
@@ -149,7 +129,7 @@ h1 {
 	ul {
 		margin: 0 auto;
 		padding: 0;
-		width: 960px;
+		width: 100%;
 		/*border: 1px dotted steelblue;*/
 		position: relative;
 
@@ -183,7 +163,7 @@ h1 {
 		}/*h2*/
 		
 		p {
-			margin: 5px 0 30px 0;
+			margin: 5px 0 20px 0;
 		}/*p*/
 		
 		ul {
@@ -270,12 +250,48 @@ h1 {
 	}/*.contact-box*/
 }/*contact-container*/
 
+/***** CAREER TEASER *****/
+.career-teaser {
+	h2 {
+		margin: 0;	
+	}/*h2*/
+	
+	p {
+		margin: 5px 0 40px 0;
+	}/*p*/
+	
+}/*career-teaser*/
+
+
 /***** FOOTER *****/
 footer {
-	padding: 100px 0;
+	padding: 20px 0;
 	background: #000;
 	p {
 		color: #fff;
 		text-align: center;
+	}
+}
+
+/***** RED BUTTON *****/
+.red-button {
+	.rounded-corners;
+	margin: 20px auto;
+	padding: 0;
+	color: #fff !important;
+	display: block;
+	width: 270px;
+	height: 53px;
+	background: @red-color;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 53px;  /* same as div height */
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+	&:hover {
+		background: lighten(@red-color, 10%);	
 	}
 }
