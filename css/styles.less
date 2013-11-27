@@ -45,19 +45,25 @@ nav {
 				display: inline-block;
 				vertical-align: top;
 				list-style-type: none;
+				-webkit-transition: .5s all ease;
+                -moz-transition: .5s all ease;
+                transition: .5s all ease;
 				
 				a {
 					margin: 0;
 					padding: 0;
 					color: #fff;
 					width: 160px;
-					height: 55px;
+					height: 60px;
 					text-align: center;
 					vertical-align: middle;
-					line-height: 55px;  /* same as div height */
+					line-height: 60px;  /* same as div height */
 					display: inline-block;
 					text-decoration: none;
 					text-transform: uppercase;
+					-webkit-transition: .5s all ease;
+					-moz-transition: .5s all ease;
+	                transition: .5s all ease;
 					&:hover {
 						background: @red-color;
 					}/*hover*/
@@ -68,6 +74,16 @@ nav {
 		
 	}/*#navigation*/
 }/*nav*/
+
+/***** TEXT LINKS *****/
+a:link,
+a:visited,
+a:active { 
+	color: @red-color; 
+}
+
+a:hover { color: lighten(@red-color, 10%); }
+
 
 .active{
 height: 60px;
@@ -94,7 +110,7 @@ h1 {
 	.rounded-corners;
 	margin: 20px auto;
 	padding: 0;
-	color: #fff;
+	color: #fff !important;
 	display: block;
 	width: 270px;
 	height: 53px;
@@ -104,6 +120,9 @@ h1 {
 	line-height: 53px;  /* same as div height */
 	text-decoration: none;
 	text-transform: uppercase;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
 	&:hover {
 		background: lighten(@red-color, 10%);	
 	}
@@ -141,10 +160,7 @@ h1 {
 			vertical-align: top;
 			background: #fff;
 			border: 8px solid #d0d0d0;
-			&:hover {
-				border-color: @red-color;
-			}/*hover*/
-		}/*portfolio-thumb*/
+		}/*img*/
 	}/*ul*/
 }/*portfolio-front*/
 
@@ -202,22 +218,23 @@ h1 {
 	.pic-container {
 		margin: 20px auto;
 		padding: 0;
-		width: 700px;/*63%;*/
+		width: 820px;
 		/*border: 1px dotted red;*/
 		
 		.mugshot {
-		
+			margin: 20px 0;
+			width: 200px;
+			display: inline-block;
+			text-align: center;
+			vertical-align: top;
+			
 			img {
 				margin: 10px;
 			}/*img*/
 			
 			h3 {
-				
+				margin: 0;
 			}/*h3*/
-			
-			p {
-				
-			}/*p*/
 			
 		}/*mugshot*/
 	}/*pic-container*/
@@ -228,6 +245,7 @@ h1 {
 	margin: 0 auto;
 	padding: 0;
 	width: 75%;
+	text-align: center;
 	/*border: 1px dotted red;*/
 	
 	.contact-box {
