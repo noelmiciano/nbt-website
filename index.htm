@@ -28,12 +28,12 @@
 	<nav>
 		<div id="navigation">
 			<ul id="nav">
-   <li><a class="nav-link active" href="#" onclick="$('#logo-area').animatescroll({scrollSpeed:1500,easing:'easeInOutBack',padding:50});">Home</a></li>
-   <li><a class="nav-link" href="#" onclick="$('#services').animatescroll({scrollSpeed:1500,easing:'easeInOutBack',padding:50});">Services</a></li>
-   <li><a class="nav-link" href="#" onclick="$('#portfolio-front').animatescroll({scrollSpeed:1500,easing:'easeInOutBack',padding:50});">Portfolio</a></li>
-   <li><a class="nav-link" href="#" onclick="$('#about').animatescroll({scrollSpeed:1500,easing:'easeInOutBack',padding:50});">About Us</a></li>
-   <li><a class="nav-link" href="#" onclick="$('#careers').animatescroll({scrollSpeed:1500,easing:'easeInOutBack',padding:50});">Careers</a></li>
-   <li><a class="nav-link" href="http://nbtblog.wordpress.com/">Blog</a></li>
+   <li class="active"><a class="link" href="#">Home</a></li>
+   <li><a class="link" href="#portfolio-front">Portfolio</a></li>
+   <li><a class="link" href="#services">Services</a></li>
+   <li><a class="link" href="#about">About Us</a></li>
+   <li><a class="link" href="#careers">Careers</a></li>
+   <li><a href="http://nbtblog.wordpress.com">Blog</a></li>
 			</ul>
 		</div><!-- navigation -->
 	</nav><!-- nav -->
@@ -47,7 +47,7 @@
 		<!-- PORTFOLIO -->
 		<section id="portfolio-front">
 			<h1>Mapping Applications For Your Business</h1>
-			<div class="content">
+			<div class="content">   
 				<ul class="thumbnails">
 					<img src="img/maine_health.png" width="280" height="180">
 					<img src="img/estuary.png" width="280" height="180">
@@ -194,18 +194,22 @@
 		<section id="careers">
 			<div class="content">
 				<h1>Careers</h1>
-				
+
 				<div class="career-teaser">
 					<h2>Web Developer/Programmer</h2>
 					<p>NBT Solutions LLC is a small, growing software development and information technology consulting firm that specializes in the design and development of web-based mapping and data visualization applications. NBT is currently looking for a full-time web developer to assist with the implementation of a variety of projects – including several geospatial application development projects. Strong UI/UX skills are a must.</p>
-					
-					<a class="red-button" href="#">More Details</a>
+                                        <h2>Systems Administrator</h2>
+					<p>NBT Solutions LLC is a small, growing software development and information technology consulting firm that specializes in the design and development of web-based mapping and data visualization applications. NBT is currently looking for a full-time web developer to assist with the implementation of a variety of projects – including several geospatial application development projects. Strong UI/UX skills are a must.</p>
+                                        <h2>Intern</h2>
+					<p>NBT Solutions LLC is a small, growing software development and information technology consulting firm that specializes in the design and development of web-based mapping and data visualization applications. NBT is currently looking for a full-time web developer to assist with the implementation of a variety of projects – including several geospatial application development projects. Strong UI/UX skills are a must.</p>
+                                        <a class="red-button" href="#">More Details</a>
+
 				</div><!--career-teaser -->
 				
 			</div><!-- content -->
 		</section><!-- careers -->		
 
-   
+
    <!-- FOOTER -->
 	<footer>
 		<p class="copyright">Copyright © 2013 NBT Solutions, LLC.</p>
@@ -213,24 +217,32 @@
 
 		<!-- jQuery -->
 		<script type="text/javascript" src="js/vendor/jquery-2.0.3.min.js"></script>
-
+                <script type="text/javascript" src="js/vendor/jquery-ui.min.js"></script>
 		<!-- Scripts -->
-        <script type="text/javascript" src="js/vendor/less-1.5.0.min.js"></script>
-        <script type="text/javascript" src="js/animatescroll.js"></script>
+                <script type="text/javascript" src="js/vendor/less-1.5.0.min.js"></script>
 
-    <script type="text/javascript">
 
-$(document).ready(function() {
-
-      $(' .nav-link ').click(function(){
-
-      $(' .nav-link ').removeClass( 'active' );
-
-      $(this).addClass( 'active' );
-
-      });
+                <script type="text/javascript">
+var lastId, topMenu = $("#nav"), topMenuHeight = topMenu.outerHeight() + 0, menuItems = topMenu.find("a.link"), scrollItems = menuItems.map(function() {
+  var b = $($(this).attr("href"));
+  if (b.length) {
+    return b;
+  }
 });
-    </script>
+menuItems.click(function(b) {
+  var a = $(this).attr("href"), a = "#" === a ? 0 : $(a).offset().top - topMenuHeight + 1;
+  $("html, body").stop().animate({scrollTop:a}, 1500, 'easeInOutBack');
+  b.preventDefault();
+});
+$(window).scroll(function() {
+  var b = $(this).scrollTop() + topMenuHeight, a = scrollItems.map(function() {
+    if ($(this).offset().top < b) {
+      return this;
+    }
+  }), a = (a = a[a.length - 1]) && a.length ? a[0].id : "";
+  lastId !== a && (lastId = a, menuItems.parent().removeClass("active").end().filter("[href=#" + a + "]").parent().addClass("active"));
+});
+                </script>
 
 		<!-- Google Analytics (async): change UA-XXXXXXXX-XX to be your sites
 			 ID, and yourdomain.com to be your sites domain name. -->
