@@ -12,9 +12,10 @@
 		#nav {
 			margin: 0 auto !important;
 			border: 1px dotted blue;
-			width: 320px !important;
+			width: 100% !important;
+			text-align:center;
 			a {
-				width: 62px !important;
+				width: 50px !important;
 				font-size: 1em;
 				border: none;
 				border: 1px dotted gray;
@@ -36,7 +37,7 @@
 	}/*logo*/
 	
 	/***** PORTFOLIO *****/
-	#portfolio-front {	
+	#portfolio-front {
 		h1 {
 			padding: 0 1em;
 			font-size: 1.3em;	
@@ -137,3 +138,64 @@
 
 
 }
+
+
+
+/***** Tablets/Mobile: Less than: 768px wide, Greater than 480px wide *****/
+@media all and (max-width: 768px) and (min-width: 481px) {
+	/***** NAVIGATION *****/
+	nav {
+		#nav {
+			margin: 0 auto !important;
+			border: 1px dotted blue;
+			width: 100% !important;
+			text-align:center;
+			a {
+				width: 85px !important;
+				font-size: 1em;
+				border: none;
+				border: 1px dotted gray;
+
+				.icon {
+					margin: 0 auto !important;
+				}
+				
+				span {
+					font-size:.8em;
+					margin-left:5px;
+				}
+			}/*a*/
+		}/*#nav*/
+	}/*nav*/
+	
+	}
+
+
+/***** Tablets: Less than: 980px wide, Greater than 768px wide *****/
+@media all and (max-width: 980px) and (min-width: 768px) {
+	/***** NAVIGATION *****/
+	nav {
+		#nav {
+			margin: 0 auto !important;
+			border: 1px dotted blue;
+			width: 100% !important;
+			text-align:center;
+			a {
+				width: 125px !important;
+				font-size: 1em;
+				border: none;
+				border: 1px dotted gray;
+
+				.icon {
+					margin: 0 auto !important;
+				}
+				
+				span {
+					font-size:.8em;
+					margin-left:5px;
+				}
+			}/*a*/
+		}/*#nav*/
+	}/*nav*/
+	
+	}
