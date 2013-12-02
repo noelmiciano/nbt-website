@@ -1,11 +1,31 @@
+/***** Phones: 20em = 320px wide *****/
+@media all and (max-width: 20em) {
+
+
+
+}
+
 /***** Phones: 30em = 480px wide *****/
 @media all and (max-width: 30em) {
 	/***** NAVIGATION *****/
 	nav {
 		#nav {
+			margin: 0 auto !important;
+			border: 1px dotted blue;
+			width: 320px !important;
 			a {
-				width: 95px !important;
-				font-size: .8em;
+				width: 62px !important;
+				font-size: 1em;
+				border: none;
+				border: 1px dotted gray;
+				
+				.icon {
+					margin: 0 auto !important;
+				}
+				
+				span {
+					display: none;
+				}
 			}/*a*/
 		}/*#nav*/
 	}/*nav*/
