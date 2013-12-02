@@ -24,10 +24,10 @@ nav {
 	padding: 0;
 	width: 100%;
 	background: #000;
-	position:fixed;
-	z-index:2000;
+	position: fixed;
+	z-index: 2000;
 	top: 0;
-	left:0;
+	left: 0;
 
 	#navigation {
 		margin: 0;
@@ -85,8 +85,8 @@ a:active {
 a:hover { color: lighten(@red-color, 10%); }
 
 .active{
-height: 60px;
-background: @red-color;
+	height: 60px;
+	background: @red-color;
 }
 
 section {
@@ -98,8 +98,8 @@ section {
 
 .content {
 	margin: 0 auto;
-	width: 960px;
-	/*border: 1px dotted steelblue;*/
+	padding: 0;
+	width: 95%;
 }
 
 h1 {
@@ -115,10 +115,11 @@ h1 {
 #logo-area {
 	padding-bottom: 0;
 	.content {
-		padding-top: 30px;
+		padding-top: 10px;
 		.logo {
 			display: block;
-			margin: 50px auto;
+			margin: 20px auto;
+			max-width: 100%;
 		}/*logo*/
 	}
 }
@@ -129,9 +130,6 @@ h1 {
 	ul {
 		margin: 0 auto;
 		padding: 0;
-		width: 100%;
-		/*border: 1px dotted steelblue;*/
-		position: relative;
 
 		img {
 			margin: 10px;
@@ -140,6 +138,7 @@ h1 {
 			vertical-align: top;
 			background: #fff;
 			border: 8px solid #d0d0d0;
+			max-width: 100%;
 		}/*img*/
 	}/*ul*/
 }/*portfolio-front*/
@@ -155,8 +154,8 @@ h1 {
 	
 	.service-sections {
 		margin: 0 auto;
-		padding: 0;
-		width: 80%;
+		padding: 0 5em;
+		
 		
 		h2 {
 			margin: 0;
@@ -190,31 +189,33 @@ h1 {
 #about {
 	background: #bfbfbf;
 	
-	p {
-		margin: 0 auto;
-		width: 80%;
-	}
+	h1 {
+		margin: 0;
+	}/*h1*/
 
 	.pic-container {
-		margin: 20px auto;
-		padding: 0;
-		width: 820px;
-		/*border: 1px dotted red;*/
-		
+		margin: 0 auto;
+		padding: 1em;
+		width: 75.8%;
+
 		.mugshot {
-			margin: 20px 0;
-			width: 200px;
 			display: inline-block;
 			text-align: center;
 			vertical-align: top;
 			
 			img {
-				margin: 10px;
+				max-width: 100%;
+				padding: 1em;
 			}/*img*/
 			
 			h3 {
 				margin: 0;
+				font-size: 1em;
 			}/*h3*/
+			
+			p {
+				margin: 0;
+			}
 			
 		}/*mugshot*/
 	}/*pic-container*/
@@ -246,18 +247,20 @@ h1 {
 			width: 100%;
 		}/*p*/
 		
-		
 	}/*.contact-box*/
 }/*contact-container*/
 
 /***** CAREER TEASER *****/
 .career-teaser {
+	margin-bottom: 2em;
+	padding: 0 5em;
+	
 	h2 {
 		margin: 0;	
 	}/*h2*/
 	
 	p {
-		margin: 5px 0 40px 0;
+		margin: .5em 0;
 	}/*p*/
 	
 }/*career-teaser*/
