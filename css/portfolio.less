@@ -9,69 +9,70 @@
 @red-color: #b31f24;
 
 /********** END LESS VARIABLES *********/
-
-
 .portfolio {
-	margin-top: 100px;
-	h1.category {
-		color: @red-color;
-		font-weight: 700;
-	}/*category*/
-		
-	.project-container {
-		margin: 0 0 80px 0;
-		img {
-			margin: 0 30px;
-			padding: 0;
-			display: inline-block;
-			vertical-align: top;
-			background: #fff;
-			border: 8px solid #d0d0d0;
-			&:hover {
-				border-color: @red-color;
-			}/*hover*/
-		}/*img*/
+	section:nth-child(1) {
+		margin-top: 6em;	
+	}
 	
-		.description {
-			margin: 0;
-			padding: 0;
-			width: 65%;
-			display: inline-block;
-			vertical-align: top;
+	section {
+		padding: 0;
+		h1.category {
+			color: @red-color;
+			font-weight: 700;
+		}/*category*/
 		
-			h2 {
-				margin: 0;
-				padding: 0;
-				font-weight: 400;
-			}/*h2*/
-			
-			h3 {
-				margin: 10px 0;
-			}/*h3*/
-		
-			p {
-				margin: 7px 0;
-				padding: 0;
-			}/*p*/
-			
-			ul {
-				margin: 0 0 10px 0;
+		.project-container {
+			margin: 0 0 80px 0;
+			img {
+				margin: 0 20px;
 				padding: 0;
 				display: inline-block;
 				vertical-align: top;
-			
-				li {
-					margin: 0 35px;
+				background: #fff;
+				border: 8px solid #d0d0d0;
+			}/*img*/
+	
+			.description {
+				margin: 0;
+				padding: 0;
+				width: 65%;
+				display: inline-block;
+				vertical-align: top;
+		
+				h2 {
+					margin: 0;
 					padding: 0;
-					color: #b82d44;
-					span {
-						color: #000;
-					}/*span*/
-				}/*li*/
-			}/*ul*/
+					font-weight: 400;
+				}/*h2*/
 			
-		}/*description*/
-
+				h3 {
+					margin: 10px 0;
+				}/*h3*/
+		
+				p {
+					margin: 7px 0;
+					padding: 0;
+				}/*p*/
+			
+				ul {
+					width: 100%;
+					margin: 0 0 10px 0;
+					padding: 0;
+					display: inline-block;
+					vertical-align: top;
+			
+					li {
+						margin: 0 35px;
+						padding: 0;
+						color: #b82d44;
+						span {
+							color: #000;
+						}/*span*/
+					}/*li*/
+				}/*ul*/
+			
+			}/*description*/
+		}/*section*/
 	}/*project-container*/
 	
 
