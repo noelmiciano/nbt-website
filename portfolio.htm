@@ -24,28 +24,35 @@
 		<link type="text/css" rel="stylesheet/less" href="css/mediaq.less">
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+                <!-- LESS CSS -->
+                <script type="text/javascript" src="js/vendor/less-1.5.0.min.js"></script>
 
 	</head>
 	<body>
-	
+
 	<nav>
 		<div id="navigation">
 			<ul id="nav">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="services.html">Services</a></li>				
-				<li><a href="about.html">About Us</a></li>
-				<li><a href="careers.html">Careers</a></li>
-				<li><a href="http://nbtblog.wordpress.com/">Blog</a></li>
+				<li><a class="sm-link" href="./index.htm"><i class="icon fa fa-home"></i><span>Home</span></a></li>
+				<li><a class="link" href="#env-energy"><i class="icon fa fa-globe"></i><span>Environment & Energy</span></a></li>
+				<li><a class="link" href="#comm-dev"><i class="icon fa fa-users"></i><span>Community Development</span></a></li>
+				<li><a class="link" href="#loc-enable"><i class="icon fa fa-map-marker"></i><span>Location Enablement</span></a></li>
+                                <li><a class="link" href="#telcom"><i class="icon fa fa-desktop"></i><span>Telecommunications</span></a></li>
+
 			</ul>
 		</div><!-- navigation -->
 	</nav><!-- nav -->
 
-									
+						<li><a href="./index.htm"><i class="icon fa fa-home"></i><span>Home</span></a></li>
 		<!-- PORTFOLIO -->
 			<div class="content portfolio">
-				
+
 				<!--ENVIRONMENT & ENERGY -->
-				<h1 class="category">Environment & Energy</h1>
+			<section id="env-energy">
+
+				<h1 class="category"><i class="icon fa fa-globe"></i>  Environment & Energy</h1>
 				
 				<!-- ESTUARIES -->
 				<div class="project-container">
@@ -96,7 +103,7 @@
 						<p>The data management system consists of a back-end database (MySQL) and a middleware service layer (SOAP/XML-RPC) developed in PHP. To date, the database has stored over 25 million observations, all of them transmitted in near real-time over a cellular connection to the buoys. The middleware layer was built both as a technical underpinning of the website and as a developer portal, allowing third party organizations to build their own applications using the data from the buoys. For example, The National Geographic Society built the FieldScope application using CBIBS data by acting as a third-party developer.</p>
 						
 						<p>The CBIBS system was developed using completely open source standards and tools, including PHP, Apache, MySQL and SOAP.</p>
-					
+
 						<a class="red-link" href="#">Visit Website</a>
 						</div><!-- description -->		
 					</div><!-- project-container-->
@@ -109,7 +116,7 @@
 						<p>To help its residential, commercial, and industrial customers meet energy efficiency goals, DTE hired ICF International and NBT Solutions to develop an online tool to help these customers search for contractors that provide specific energy efficiency services.</p>
 					
 						<p>The application allows users to enter a location and specify the types of services they are interested in. The application then returns a list of contractors that meet the users’ criteria, a map showing the locations of the contractors, and detailed information about the contractor including any reviews of that contractor.</p>
-						
+
 						<p>The CBIBS system was developed using completely open source standards and tools, including PHP, Apache, MySQL and SOAP.</p>
 					
 						<a class="red-link" href="#">Visit Website</a>
@@ -129,15 +136,18 @@
 						</div><!-- description -->		
 					</div><!-- project-container-->
 
+                                  </section>
+
+                                  <section id="comm-dev">
 
 					<!-- COMMUNITY DEVELOPMENT -->
-					<h1 class="category">Community Development</h1>
-				
+					<h1 class="category"><i class="icon fa fa-users"></i>  Community Development</h1>
+
 					<!-- MAINE HEALTH -->
 					<div class="project-container">
 					<img src="img/maine_health.png" width="280" height="180">
 					<div class="description">
-						<h2>Maine Health</h2>
+						<h2>MAINEHEALTH</h2>
 						<p>NBT Solutions works with MaineHealth, Maine’s largest health care provider system, to develop data analyses, presentations and maps. We design and deliver thematic maps depicting the status of Maine’s population health in an annual MaineHealth Index report.</p>
 					
 						<p>The Index project tracks progress on 6 key priorities that are linked to community health status:</p>
@@ -152,14 +162,20 @@
 						
 						<a href="http://www.mainehealth.org/workfiles/mh_community/2012-MaineHealth-Health-Index-Report.pdf">Download the 2011 Maine Health Index Report</a>	
 						
-						</div><!-- description -->		
+						</div><!-- description -->
 					</div><!-- project-container-->
-					
+
+                                </section>
+
+                                <section id="loc-enable">
+
 					<!-- LOCATION ENABLEMENT -->
+					<h1 class="category"><i class="icon fa fa-map-marker"></i>  Location Enablement</h1>
+
 					<div class="project-container">
 					<img src="img/location_enablement.png" width="280" height="180">
 					<div class="description">
-						<h2>Location Enablement</h2>
+						<h2>NEIGHBORWORKS AMERICA</h2>
 						<p>NBT Solutions was hired to conduct a needs assessment and strategic plan for the geospatial services and applications requirements of NeighborWorks America. Interviews with numerous program managers and corporate IT functions led to the establishment of an implementation plan for multiple systems and points of access. Geoprocessing workflows are being implemented to manage geocoding, spatial append, and mapping.</p>
 					
 						<p>Product Highlights:</p>
@@ -174,21 +190,37 @@
 						
 						</div><!-- description -->		
 					</div><!-- project-container-->
+                                   </section>
 
+                                   <section id="telcom">
 					<!-- TELECOMMUNICATIONS -->
-					<h1 class="category">Telecommunications</h1>
-				
-					<!-- MAINE HEALTH -->
+					<h1 class="category"><i class="icon fa fa-desktop"></i>  Telecommunications</h1>
+
+					<!-- FIBERLOCATOR -->
 					<div class="project-container">
 					<img src="img/fiber_locator.png" width="280" height="180">
 					<div class="description">
-						<h2>Maine Health</h2>
+						<h2>FIBERLOCATOR</h2>
 						<p>NBT Solutions is working closely with the New England Fiber Company to provide an online mapping service that enables fiber optic providers to locate customers and determine the best method for providing services to these customers. FiberLocator, a GIS-based web application, contains the location and description of fiber optic assets from over 150 different fiber carriers within the US. The application is provided to users on a subscription basis and supports a general set of GIS tools, including pan and zoom, zoom to area, interactive distance measurement, feature information queries (i.e. info tool) and printing. Users can quickly locate customers based on address and see what dark fiber assets and lit buildings are within proximity a location. A custom dynamic legend component limits the legend display to only the line layers that are in the current map view - allowing the uses to quickly filter out relevant fiber assets.</p>
 					
 						<p>FiberLocator was developed using open source standards and tools, including OpenLayers, ExtJs, MapServer, and PostGres/PostGIS. All data is served using Open Geospatial Consortium (OGC) standards, including Web Mapping Services (WMS), Web Feature Services (WFS) and Web Coverage Services (WCS). The application supports geocoding of addresses and detailed basemap coverages using Bing Maps API.</p>
-							<a class="red-link" href="#">Visit Website</a>			
-						</div><!-- description -->		
+							<a class="red-link" href="#">Visit Website</a>
+						</div><!-- description -->
 					</div><!-- project-container-->
+
+					<!-- VETRO -->
+					<div class="project-container">
+					<img src="img/fiber_locator.png" width="280" height="180">
+					<div class="description">
+						<h2>VETRO</h2>
+						<p>NBT Solutions is working closely with the New England Fiber Company to provide an online mapping service that enables fiber optic providers to locate customers and determine the best method for providing services to these customers. FiberLocator, a GIS-based web application, contains the location and description of fiber optic assets from over 150 different fiber carriers within the US. The application is provided to users on a subscription basis and supports a general set of GIS tools, including pan and zoom, zoom to area, interactive distance measurement, feature information queries (i.e. info tool) and printing. Users can quickly locate customers based on address and see what dark fiber assets and lit buildings are within proximity a location. A custom dynamic legend component limits the legend display to only the line layers that are in the current map view - allowing the uses to quickly filter out relevant fiber assets.</p>
+					
+						<p>FiberLocator was developed using open source standards and tools, including OpenLayers, ExtJs, MapServer, and PostGres/PostGIS. All data is served using Open Geospatial Consortium (OGC) standards, including Web Mapping Services (WMS), Web Feature Services (WFS) and Web Coverage Services (WCS). The application supports geocoding of addresses and detailed basemap coverages using Bing Maps API.</p>
+							<a class="red-link" href="#">Visit Website</a>
+						</div><!-- description -->
+					</div><!-- project-container-->
+                  </section>
+
 					
 				</div><!-- content -->
 					   
@@ -199,9 +231,10 @@
 
 		<!-- jQuery -->
 		<script type="text/javascript" src="js/vendor/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="js/vendor/jquery-ui.min.js"></script>
 
-		<!-- Scripts -->
-        <script type="text/javascript" src="js/vendor/less-1.5.0.min.js"></script>
+                <!-- Scripts -->
+                <script type="text/javascript" src="js/scrollspy.min.js"></script>
 
 		<!-- Google Analytics (async): change UA-XXXXXXXX-XX to be your sites
 			 ID, and yourdomain.com to be your sites domain name. -->

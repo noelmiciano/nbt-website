@@ -9,65 +9,142 @@
 @red-color: #b31f24;
 
 /********** END LESS VARIABLES *********/
-
-
 .portfolio {
-	margin-top: 100px;
-	h1.category {
-		color: @red-color;
-		font-weight: 700;
-	}/*category*/
-		
-	.project-container {
-		margin: 0 0 80px 0;
-		img {
-			margin: 0 30px;
-			padding: 0;
-			display: inline-block;
-			vertical-align: top;
-			background: #fff;
-			border: 8px solid #d0d0d0;
-		}/*img*/
+	section:nth-child(1) {
+		margin-top: 6em;	
+	}
 	
-		.description {
-			margin: 0;
-			padding: 0;
-			width: 65%;
-			display: inline-block;
-			vertical-align: top;
+	section {
+		padding: 0;
+		h1.category {
+			color: @red-color;
+			font-weight: 700;
+		}/*category*/
 		
-			h2 {
-				margin: 0;
-				padding: 0;
-				font-weight: 400;
-			}/*h2*/
-			
-			h3 {
-				margin: 10px 0;
-			}/*h3*/
-		
-			p {
-				margin: 7px 0;
-				padding: 0;
-			}/*p*/
-			
-			ul {
-				margin: 0 0 10px 0;
+		.project-container {
+			margin: 0 0 80px 0;
+			img {
+				margin: 0 20px;
 				padding: 0;
 				display: inline-block;
 				vertical-align: top;
-			
-				li {
-					margin: 0 35px;
-					padding: 0;
-					color: #b82d44;
-					span {
-						color: #000;
-					}/*span*/
-				}/*li*/
-			}/*ul*/
-			
-		}/*description*/
+				background: #fff;
+				border: 8px solid #d0d0d0;
+			}/*img*/
 	
+			.description {
+				margin: 0;
+				padding: 0;
+				width: 65%;
+				display: inline-block;
+				vertical-align: top;
+		
+				h2 {
+					margin: 0;
+					padding: 0;
+					font-weight: 400;
+				}/*h2*/
+			
+				h3 {
+					margin: 10px 0;
+				}/*h3*/
+		
+				p {
+					margin: 7px 0;
+					padding: 0;
+				}/*p*/
+			
+				ul {
+					width: 100%;
+					margin: 0 0 10px 0;
+					padding: 0;
+					display: inline-block;
+					vertical-align: top;
+			
+					li {
+						margin: 0 35px;
+						padding: 0;
+						color: #b82d44;
+						span {
+							color: #000;
+						}/*span*/
+					}/*li*/
+				}/*ul*/
+			
+			}/*description*/
+		}/*section*/
 	}/*project-container*/
+	
+
 }/*portfolio*/
+
+/***** NAVIGATION *****/
+nav {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: #000;
+	position: fixed;
+	z-index: 2000;
+	top: 0;
+	left: 0;
+
+	#navigation {
+		margin: 0;
+		padding: 0;
+		
+		#nav {
+			margin: 0 auto;
+			padding: 0;
+			width: 1200px;
+			list-style-type: none;
+
+			li {
+				margin: 0;
+				padding: 0;
+				display: inline-block;
+				vertical-align: top;
+				list-style-type: none;
+				-webkit-transition: .5s all ease;
+                                -moz-transition: .5s all ease;
+                                transition: .5s all ease;
+
+				a {
+					margin: 0;
+					padding: 0;
+					color: #fff;
+					width: 240px;
+					height: 60px;
+					text-align: center;
+					vertical-align: middle;
+					line-height: 60px;  /* same as div height */
+					display: inline-block;
+					font-size:.9em;
+					text-decoration: none;
+					text-transform: uppercase;
+					-webkit-transition: .5s all ease;
+					-moz-transition: .5s all ease;
+                                        transition: .5s all ease;   
+
+					&:hover {
+						background: @red-color;
+					}/*hover*/
+
+					.icon {
+						margin: 0 .5em 0 0;
+						padding: 0;
+						display: inline-block;
+						color: #fff;
+					}/*icon*/
+
+				}/*a*/
+			}/*li*/
+		}/*#nav*/
+		
+		
+	}/*#navigation*/
+}/*nav*/
+
+.sm-link{
+width:100px !important;
+}
