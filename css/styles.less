@@ -63,6 +63,7 @@ nav {
 					text-transform: uppercase;
 					-webkit-transition: .5s all ease;
 					-moz-transition: .5s all ease;
+					transition: .5s all ease;
 	                transition: .5s all ease;
 					&:hover {
 						background: @red-color;
@@ -359,6 +360,32 @@ footer {
 	-moz-transition: .5s all ease;
 	transition: .5s all ease;
 	&:hover {
-		background: lighten(@red-color, 10%);	
+		background: lighten(@red-color, 10%);
 	}
 }
+
+
+
+/***** SOCIAL MEDIA *****/
+
+.social {
+        width:90%;
+        margin:0 auto; 
+        padding-bottom:10px;
+                  a{
+                    display:inline-block;
+                    padding:10px;
+                    
+                                 img{
+                                 height:40px;
+                                 -webkit-transition: .7s all ease;
+					-moz-transition: .7s all ease;
+					transition: .7s all ease;
+
+                                 &:hover{
+                                         height:43px;
+                                         }
+                                 }
+                    }
+        }
+
