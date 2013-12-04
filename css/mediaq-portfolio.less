@@ -167,26 +167,48 @@
 			margin: 0 auto !important;
 			width: 100% !important;
 			text-align:center;
-			a {
-				width: 85px !important;
-				font-size: .9em;
-				border: none;
+			
+			li {
+				width: 145px;
+				a {
+					width: 145px !important;
+					font-size: .9em;
+					border: none;
+				
+					.icon {
+						margin: 0 auto !important;
+						font-size: 1.5em;
+					}
 
-
-				.icon {
-					margin: 0 auto !important;
-				}
-
-				span {
-					font-size:.75em;
-					margin-left:4px;
-					display:none;
-				}
-			}/*a*/
+					span {
+						font-size:.75em;
+						margin-left:4px;
+						display:none;
+					}
+				}/*a*/
+			}/*li*/
 		}/*#nav*/
 	}/*nav*/
 	
-	}
+	
+	/***** PORTFOLIO LIST ******/
+	.portfolio {
+		h1 {
+			background: #d0d0d0;
+			padding: .3em 0;
+		}/*h1*/
+		
+		.project-container {
+			img {
+				margin: 0 1em 0 0 !important;
+			}/*img*/
+			.description {
+				width: 50% !important;
+			}/*description*/ 
+		}/*.project-container */
+	}/*portfilio*/
+	
+}
 
 
 /***** Tablets: Less than: 1200px wide, Greater than 800px wide *****/
