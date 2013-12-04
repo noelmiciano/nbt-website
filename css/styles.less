@@ -276,10 +276,9 @@ footer {
 	background: #000;	
 	
 	.content {
-		border: 1px dotted gray;
 		width: 75%;
 		p {
-			color: #ccc !important;
+			color: #ccc;
 			text-align: center;
 			font-size: 1em;
 		}/*p*/
@@ -318,12 +317,22 @@ footer {
 					label {
 						color: #ccc;
 					}/*label*/
+				
 					input {
-						
+						.rounded-corners;
+						margin-bottom: 1.5em;
+						width: 95%;
+						padding: .7em;
+						border: none;
 					}/*input*/
 				}/*fieldset*/
 			}/*form*/
 		}/*container*/
+		
+		.copyright {
+			font-size: .8em;
+			color: #666 !important;
+		}
 	}/*content*/
 }/*footer*/
 
