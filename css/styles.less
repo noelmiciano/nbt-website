@@ -154,6 +154,7 @@ h1 {
 
 /***** SERVICES *****/
 #services {
+	padding: 1em 0;
 	background: #cacaca;
 	
 	.service-sections {
@@ -191,6 +192,7 @@ h1 {
 
 /***** ABOUT *****/
 #about {
+	padding: 1em 0;
 	background: #bfbfbf;
 	
 	h1 {
@@ -255,20 +257,21 @@ h1 {
 }/*contact-container*/
 
 /***** CAREER TEASER *****/
-.career-teaser {
-	margin-bottom: 2em;
-	padding: 0 5em;
+#careers {
+	padding: 1em 0;
+	.career-teaser {
+		margin-bottom: 2em;
+		padding: 0 5em;
 	
-	h2 {
-		margin: 0;	
-	}/*h2*/
+		h2 {
+			margin: 0;	
+		}/*h2*/
 	
-	p {
-		margin: .5em 0;
-	}/*p*/
-	
-}/*career-teaser*/
-
+		p {
+			margin: .5em 0;
+		}/*p*/
+	}/*career-teaser*/
+}/*careers*/
 
 /***** FOOTER *****/
 footer {
@@ -311,21 +314,22 @@ footer {
 				}/*ul*/
 			}/*tweets*/
 		
-			form {
-				fieldset {
+			form {				
+				input {
+					.rounded-corners;
+					margin-bottom: 1.5em;
+					width: 95%;
+					padding: .7em;
 					border: none;
-					label {
-						color: #ccc;
-					}/*label*/
+				}/*input*/
 				
-					input {
-						.rounded-corners;
-						margin-bottom: 1.5em;
-						width: 95%;
-						padding: .7em;
-						border: none;
-					}/*input*/
-				}/*fieldset*/
+				.button {
+					.rounded-corners;
+					width: 270px;
+					height: 53px;
+					padding: 0;
+					font-size: 1em;
+				}
 			}/*form*/
 		}/*container*/
 		
