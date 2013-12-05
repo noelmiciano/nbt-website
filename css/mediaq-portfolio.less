@@ -1,5 +1,5 @@
 /***** Phones: 30em = 480px wide *****/
-@media all and (max-width: 30em) {
+@media all and (max-width: 480px) {
 	/***** NAVIGATION *****/
 	nav {
 		#nav {
@@ -155,12 +155,35 @@
 		width: 90%;
 		padding-bottom: 3em;
 	}/*career*/
+	
+	/***** FOOTER *****/
+	footer {
+		.content {
+			width: 90%;
+			
+			.container:nth-child(1) {
+				border-bottom: 1px solid #222;
+			}
+			.container {
+				width: 100%;
+				margin: 0;
+				
+				input {
+					width: 60%;
+					display: block;
+					margin: 0 auto;
+				}
+			}/*container*/
+		}/*content*/
+	
+	}/*footer*/
+
 }
 
 
 
 /***** Tablets/Mobile: Less than: 768px wide, Greater than 480px wide *****/
-@media all and (max-width: 800px) and (min-width: 481px) {
+@media all and (max-width: 768px) and (min-width: 481px) {
 	/***** NAVIGATION *****/
 	nav {
 		#nav {
@@ -169,21 +192,21 @@
 			text-align:center;
 			
 			li {
-				width: 145px;
+				width: 105px;
 				a {
-					width: 145px !important;
+					width: 105px !important;
 					font-size: .9em;
 					border: none;
 				
 					.icon {
 						margin: 0 auto !important;
-						font-size: 1.5em;
+						font-size: 1.3em;
 					}
 
 					span {
-						font-size:.75em;
-						margin-left:4px;
-						display:none;
+						font-size: .75em;
+						margin-left: 4px;
+						display: none;
 					}
 				}/*a*/
 			}/*li*/
@@ -191,7 +214,7 @@
 	}/*nav*/
 	
 	
-	/***** PORTFOLIO LIST ******/
+	/***** PORTFOLIO ******/
 	.portfolio {
 		h1 {
 			background: #d0d0d0;
@@ -200,13 +223,32 @@
 		
 		.project-container {
 			img {
-				margin: 0 1em 0 0 !important;
+				margin: 1em auto !important;
+				display: block !important;
+				text-align: center !important;
 			}/*img*/
 			.description {
-				width: 50% !important;
+				width: 100% !important;
+				h2 {
+					text-align: center;
+				}/*h2*/
 			}/*description*/ 
 		}/*.project-container */
 	}/*portfilio*/
+	
+	/***** FOOTER *****/
+	footer {
+		.content {
+			width: 90%;
+			.container {
+				width: 40%;
+				margin: 1.3em;
+				fieldset {
+					padding: 0;
+				}
+			}/*container*/
+		}/*content*/
+	}/*footer*/
 	
 }
 
@@ -219,10 +261,9 @@
 			margin: 0 auto !important;
 			width: 100% !important;
 			text-align:center;
-			
-			.sm-link{
-                                         width:100px !important;
-                                                     }
+			.sm-link {
+            	width:100px !important;
+             }
 			a {
 				width: 170px !important;
 				font-size: .75em;
@@ -231,15 +272,12 @@
 				.icon {
 					margin: 0 auto !important;
 				}
-
 				span {
 					font-size:.7em;
 					margin-left:5px;
-				}
-
-
+				}/*span*/
 			}/*a*/
 		}/*#nav*/
 	}/*nav*/
 	
-	}
+}
