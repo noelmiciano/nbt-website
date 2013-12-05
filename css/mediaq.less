@@ -1,24 +1,27 @@
 /***** Phones: 30em = 480px wide *****/
-@media all and (max-width: 30em) {
+@media all and (max-width: 480px) {
 	/***** NAVIGATION *****/
 	nav {
 		#nav {
 			margin: 0 auto !important;
 			width: 100% !important;
 			text-align:center;
-			a {
-				width: 50px !important;
-				font-size: 1em;
-				border: none;
+			li {
+				width: 60px;
+				a {
+					width: 60px !important;
+					font-size: 1em;
+					border: none;
 
-				.icon {
-					margin: 0 auto !important;
-				}
+					.icon {
+						margin: 0 auto !important;
+					}
 				
-				span {
-					display: none;
-				}
-			}/*a*/
+					span {
+						display: none;
+					}
+				}/*a*/
+			}/*li*/
 		}/*#nav*/
 	}/*nav*/
 
@@ -34,8 +37,9 @@
 			font-size: 1.3em;	
 		}/*h1*/
 		
-		ul {
+		.thumbnails {
 			text-align: center;
+			width: 100%;
 			img {
 				margin: 0 0 1em 0;
 			}
@@ -194,36 +198,82 @@
 			margin: 0 auto !important;
 			width: 100% !important;
 			text-align:center;
-			a {
-				width: 85px !important;
-				font-size: .9em;
-				border: none;
+			li {
+				width: 105px;
+				a {
+					width: 105px !important;
+					font-size: .9em;
+					border: none;
 
-				.icon {
-					margin: 0 auto !important;
-				}
+					.icon {
+						margin: 0 auto !important;
+						font-size: 1.3em;
+					}
 				
-				span {
-					font-size:.75em;
-					margin-left:5px;
-				}
-			}/*a*/
+					span {
+						font-size:.75em;
+						margin-left:5px;
+						display: none;
+					}/*span*/
+				}/*a*/
+			}/*li*/
 		}/*#nav*/
 	}/*nav*/
 		
 	/***** PORTFOLIO *****/
 	#portfolio-front {	
-		ul {
-			width: 90%;
-		}
+		.thumbnails {
+			width: 100%;
+			img {
+				margin: 5px;
+				max-width: 40%;
+				height: auto;
+			}/*img*/
+		}/*thumbnails*/
 	}/*#portfolio-front*/
 	
+	/***** SERVICES *****/
+	.service-sections {
+		padding: 0 1em !important;
+	}
+	
+	/***** ABOUT *****/
+	.pic-container {
+		width: 100% !important;
+		padding: 0 !important;
+		
+		.mugshot {
+			width: 175px;
+		}/*mugshot*/
+	}/*pic-contianer*/
 		
 	/***** CONTACT ******/
 	#contact-container {
 		width: 90%;
+		margin-top: 3em;
+		.contact-box {
+			width: 40%;
+		}/*contact-box*/
+	}/*contact-container*/
+	
+	/***** CAREERS******/
+	.career-teaser {
+		padding: 0 1em !important;
 	}
 
+	/***** FOOTER *****/
+	footer {
+		.content {
+			width: 90%;
+			.container {
+				width: 100%;
+				margin: 0;
+				.social {
+					width: 65%;
+				}/*social*/
+			}/*container*/
+		}/*content*/
+	}/*footer*/
 }
 
 

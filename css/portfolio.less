@@ -72,6 +72,33 @@
 						}/*span*/
 					}/*li*/
 				}/*ul*/
+				
+				.show {
+					.rounded-corners;
+					margin: 2em 0;
+					font-size: .7em;
+					color: #fff;
+					display: block;
+					width: 100px;
+					height: 30px;
+					background: @red-color;
+					text-align: center;
+					vertical-align: middle;
+					line-height: 30px;  /* same as div height */
+					text-decoration: none;
+					text-transform: uppercase;
+					-webkit-transition: .5s all ease;
+					-moz-transition: .5s all ease;
+					transition: .5s all ease;
+					cursor: pointer;
+					&:hover {
+						background: lighten(@red-color, 10%);
+					}/*hover*/
+				}/*show*/
+				
+				.more-info {
+					display: none;
+				}/*hidden*/
 			
 			}/*description*/
 		}/*section*/
