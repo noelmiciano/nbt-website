@@ -158,36 +158,43 @@ h1 {
 	background: #cacaca;
 	
 	.service-sections {
-		margin: 0 auto;
+		margin: 1.5em auto;
 		padding: 0 5em;
 		
-		
-		h2 {
-			margin: 0;
-		}/*h2*/
-		
-		p {
-			margin: 5px 0 20px 0;
-		}/*p*/
-		
-		ul {
-			margin: 0;
-			padding: 0;
+		img {
 			display: inline-block;
 			vertical-align: top;
-			
-			li {
-				margin: 0 35px;
-				padding: 0;
-				color: @red-color;
-				span {
-					color: #000;
-				}/*span*/
-			}/*li*/
-		}/*ul*/
+			margin: 0;
+		}/*img*/
 		
+		.service-description {
+			display: inline-block;
+			width: 85%;
+			h2 {
+				margin: 0;
+			}/*h2*/
+		
+			p {
+				margin: 5px 0 20px 0;
+			}/*p*/
+		
+			ul {
+				margin: 0;
+				padding: 0;
+				display: inline-block;
+				vertical-align: top;
+			
+				li {
+					margin: 0 35px;
+					padding: 0;
+					color: @red-color;
+					span {
+						color: #000;
+					}/*span*/
+				}/*li*/
+			}/*ul*/
+		}/*.service-description*/
 	}/*service-sections*/	
-	
 }/*services*/
 
 /***** ABOUT *****/
@@ -314,10 +321,11 @@ footer {
 				}/*ul*/
 			}/*tweets*/
 
-		       #mc_embed_signup  { 
-                                         max-width:350px;
-                                         margin:0 auto;
-		       }
+			#mc_embed_signup  { 
+				max-width:350px;
+				margin:0 auto;
+		    }
+		    
 			form {
 				input {
 					.rounded-corners;
