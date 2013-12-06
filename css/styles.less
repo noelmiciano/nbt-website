@@ -1,11 +1,24 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: #e8e8e8;
-	@body-font: 'Open Sans', Helvetica, Arial, sans-serif; 
+	background: transparent;
+	@body-font: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-family: @body-font;
 }
 
+.background-carto{
+ background: url("../img/carto.png") repeat;
+  background-attachment: fixed;
+ }
+
+ .background-map{
+ background: url("../img/map.jpg");
+  background-attachment: fixed;
+ }
+
+#contact-us{
+ background:rgba(255,255,255,0.5);
+ }
 /*************** LESS VARIABLES *************/
 .rounded-corners (@radius: 5px) {
 	-webkit-border-radius: @radius;
