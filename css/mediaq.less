@@ -56,16 +56,25 @@
 		.service-sections {
 			padding: .5em !important;
 			img {
-				
+				display: block;
+				text-align: center;
+				margin: 0 auto;
 			}/*img*/
-			
-			h2 {
-				font-size: 1.2em;
-			}/*h2*/
-			
-			li {
-				margin: 0 0 .75em 1.3em !important;
-			}
+			.service-description {
+				width: 100%;
+				h2 {
+					font-size: 1.2em;
+					text-align: center;
+				}/*h2*/
+				ul {
+					display: block;
+					width: 70%;
+					margin: 0 auto;
+					li {
+						margin: 0 0 .75em 1.3em !important;
+					}/*li*/
+				}/*ul*/
+			}/*.service-description*/
 		}/*.service-sections*/
 	}/*services*/
 
@@ -348,8 +357,8 @@
 			li {
 				a {
 
-                                        &:hover {
-						background: #b31f24;;
+                    &:hover {
+						background: #b31f24;
 					}/*hover*/
 
 				}/*a*/
@@ -371,4 +380,4 @@
 	}/*#portfolio-front*/
 
 
-}           /*end media query*/
+}/*end media query*/
