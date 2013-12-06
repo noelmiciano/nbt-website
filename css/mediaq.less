@@ -175,6 +175,9 @@
 	footer {
 		.content {
 			width: 90%;
+			p {
+				font-size: .9em;
+			}/*p*/
 			
 			.container:nth-child(1) {
 				border-bottom: 1px solid #222;
@@ -183,15 +186,21 @@
 				width: 100%;
 				margin: 0;
 				
-				input {
-					width: 60%;
-					display: block;
-					margin: 0 auto;
-				}
+				form {
+					#mce-EMAIL {
+						width: 90% !important;
+						margin-bottom: 1em;
+					}/*#mce-EMAIL*/
+				}/*form*/
+				
 			}/*container*/
 		}/*content*/
-	
 	}/*footer*/
+	
+	/***** SOCIAL MEDIA *****/
+	.social {
+		margin: 2em auto;
+	}/*social*/
 	
 }
 
@@ -242,8 +251,11 @@
 	/***** SERVICES *****/
 	.service-sections {
 		padding: 0 1em !important;
-	}
-	
+		.service-description {
+			width: 75% !important;
+		}/*service-description*/
+	}/*service-sections*/
+		
 	/***** ABOUT *****/
 	.pic-container {
 		width: 100% !important;
@@ -259,7 +271,7 @@
 		
 	/***** CONTACT ******/
 	#contact-container {
-		width: 90%;
+		width: 85%;
 		margin-top: 3em;
 		.contact-box {
 			width: 40%;
@@ -270,7 +282,7 @@
 	.career-teaser {
 		padding: 0 1em !important;
 	}
-
+	
 	/***** FOOTER *****/
 	footer {
 		.content {
@@ -278,12 +290,14 @@
 			.container {
 				width: 100%;
 				margin: 0;
-				.social {
-					width: 65%;
-				}/*social*/
 			}/*container*/
 		}/*content*/
 	}/*footer*/
+	
+	/***** SOCIAL MEDIA *****/
+	.social {
+		width: 60%;
+	}/*social*/
 }
 
 
@@ -319,9 +333,12 @@
 			.container {
 				width: 40%;
 				margin: 1.3em;
-				fieldset {
-					padding: 0;
-				}
+				form {
+					input {
+						width: 85% !important;
+						margin-bottom: 2.5em !important;
+					}/*input*/
+				}/*form*/
 			}/*container*/
 		}/*content*/
 	}/*footer*/
