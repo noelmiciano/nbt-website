@@ -1,0 +1,40 @@
+/*************** LESS VARIABLES *************/
+.rounded-corners (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+@red-color: #b31f24;
+
+/********** END LESS VARIABLES *********/
+
+.bio {
+	margin: 5em auto;
+	h2 {
+		color: @red-color;
+		font-weight: 700;
+	}/*h2*/
+	.employee {
+		padding: 2em;
+		img {
+			margin: 0 1em 0 0;
+			display: inline-block;
+			vertical-align: top;
+		}/*img*/
+		.description {
+			margin: 0;
+			display: inline-block;
+			vertical-align: top;
+			width: 80%;
+			h3 {
+				margin: 0;
+			}/*h3*/
+	
+			p {
+				margin: 7px 0;
+				padding: 0;
+			}/*p*/
+		}/*description*/
+	}/*employee*/			
+}/*bio*/
