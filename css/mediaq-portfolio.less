@@ -6,19 +6,21 @@
 			margin: 0 auto !important;
 			width: 100% !important;
 			text-align:center;
-			a {
-				width: 50px !important;
-				font-size: 1em;
-				border: none;
-                                           
-				.icon {
-					margin: 0 auto !important;
-					font-size: 1.1em;
-				}
+			li {
+				width: 55px;
+				a {
+					width: 55px !important;
+					font-size: 1em !important;
+					border: none;
 
-				span {
-					display: none;
-				}
+					.icon {
+						margin: 0 auto !important;
+					}
+				
+					span {
+						display: none;
+			                             }
+                           }/*li*/
 			}/*a*/
 		}/*#nav*/
 	}/*nav*/
@@ -71,7 +73,7 @@
 		.mugshot {
 			margin-bottom: 1em;
 			width: 48% !important;
-			
+
 			img {
 				margin: 0 !important;
 				padding: 0 !important;
@@ -181,7 +183,7 @@
 			}/*container*/
 		}/*content*/
 	}/*footer*/
-	
+
 	/***** SOCIAL MEDIA *****/
 	.social {
 		margin: 2em auto;
@@ -199,22 +201,17 @@
 			margin: 0 auto !important;
 			width: 100% !important;
 			text-align:center;
-			
+
 			li {
 				width: 105px;
 				a {
 					width: 105px !important;
-					font-size: .9em;
+					font-size: 1em;
 					border: none;
-				                 &:hover {
-						background: transparent;
-					}/*hover*/
-					&:active {
-						background: transparent;
-					}/*active*/
+
 					.icon {
 						margin: 0 auto !important;
-						font-size: 1.3em;
+						font-size: 1.2em;
 					}
 
 					span {
@@ -292,7 +289,7 @@
 
 
 /***** Tablets: Less than: 1200px wide, Greater than 800px wide *****/
-@media all and (max-width: 1200px) and (min-width: 801px) {
+@media all and (max-width: 1200px) and (min-width: 800px) {
 	/***** NAVIGATION *****/
 	nav {
 		#nav {
@@ -300,7 +297,7 @@
 			width: 100% !important;
 			text-align:center;
 			.sm-link {
-            	width:100px !important;
+                  width:100px !important;
              }
 			a {
 				width: 170px !important;
@@ -308,6 +305,7 @@
 				border: none;
 
 				.icon {
+				      font-size:.8em;
 					margin: 0 auto !important;
 				}
 				span {
