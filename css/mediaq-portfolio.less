@@ -160,6 +160,9 @@
 	footer {
 		.content {
 			width: 90%;
+			p {
+				font-size: .9em;
+			}/*p*/
 			
 			.container:nth-child(1) {
 				border-bottom: 1px solid #222;
@@ -168,15 +171,21 @@
 				width: 100%;
 				margin: 0;
 				
-				input {
-					width: 60%;
-					display: block;
-					margin: 0 auto;
-				}
+				form {
+					#mce-EMAIL {
+						width: 90% !important;
+						margin-bottom: 1em;
+					}/*#mce-EMAIL*/
+				}/*form*/
+				
 			}/*container*/
 		}/*content*/
-	
 	}/*footer*/
+	
+	/***** SOCIAL MEDIA *****/
+	.social {
+		margin: 2em auto;
+	}/*social*/
 
 }
 
@@ -228,7 +237,7 @@
 		
 		.project-container {
 			margin: 0 !important;
-			border-bottom: 1px solid #ccc;
+			border-bottom: 2px solid #ccc;
 			img {
 				margin: 1em auto !important;
 				display: block !important;
@@ -248,15 +257,37 @@
 		.content {
 			width: 90%;
 			.container {
-				width: 40%;
-				margin: 1.3em;
-				fieldset {
-					padding: 0;
-				}
+				width: 100%;
+				margin: 0;
 			}/*container*/
 		}/*content*/
 	}/*footer*/
 	
+	/***** SOCIAL MEDIA *****/
+	.social {
+		width: 60%;
+	}/*social*/
+	
+}
+
+/***** Tablets: Less than: 980px wide, Greater than 768px wide *****/
+@media all and (max-width: 980px) and (min-width: 768px) {
+	/***** FOOTER *****/
+	footer {
+		.content {
+			width: 90%;
+			.container {
+				width: 40%;
+				margin: 1.3em;
+				form {
+					input {
+						width: 85% !important;
+						margin-bottom: 2.5em !important;
+					}/*input*/
+				}/*form*/
+			}/*container*/
+		}/*content*/
+	}/*footer*/
 }
 
 
