@@ -344,6 +344,25 @@
 	}/*footer*/
 }
 
+/*hover for mobile/touchscreen fix - only on screens > 1024*/
+
+@media only screen and (min-width:1024px){
+	nav {
+		#nav {
+			li {
+				a {
+
+                                        &:hover {
+						background: @red-color;
+					}/*hover*/
+
+				}/*a*/
+			}/*li*/
+		}/*#nav*/
+	}/*nav*/
+
+} /*end media query*/
+
 @media all and (min-width: 1343px) {
 	/***** PORTFOLIO *****/
 	#portfolio-front {	
@@ -356,4 +375,4 @@
 	}/*#portfolio-front*/
 
 
-}
+}           /*end media query*/
