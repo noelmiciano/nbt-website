@@ -12,6 +12,7 @@
 					width: 55px !important;
 					font-size: 1em !important;
 					border: none;
+                                        padding:0 !important;
 
 					.icon {
 						margin: 0 auto !important;
@@ -194,7 +195,7 @@
 
 
 /***** Tablets/Mobile: Less than: 768px wide, Greater than 480px wide *****/
-@media all and (max-width: 768px) and (min-width: 481px) {
+@media all and (max-width: 768px) and (min-width: 480px) {
 	/***** NAVIGATION *****/
 	nav {
 		#nav {
@@ -203,15 +204,16 @@
 			text-align:center;
 
 			li {
-				width: 105px;
+				width: 90px;
 				a {
-					width: 105px !important;
-					font-size: 1em;
+					width: 90px !important;
+					font-size: .8em;
 					border: none;
+					padding:0 !important;
 
 					.icon {
 						margin: 0 auto !important;
-						font-size: 1.2em;
+						font-size: 1em;
 					}
 
 					span {
@@ -269,6 +271,20 @@
 
 /***** Tablets: Less than: 980px wide, Greater than 768px wide *****/
 @media all and (max-width: 980px) and (min-width: 768px) {
+	
+                /***** NAVIGATION *****/
+	nav {
+		#nav {
+
+			a {
+				padding: 0 7.5px !important;
+				font-size: .9em !important;
+			}/*a*/
+		}/*#nav*/
+	}/*nav*/
+
+         
+
 	/***** FOOTER *****/
 	footer {
 		.content {
@@ -288,8 +304,8 @@
 }
 
 
-/***** Tablets: Less than: 1200px wide, Greater than 800px wide *****/
-@media all and (max-width: 1200px) and (min-width: 800px) {
+/***** Tablets: Less than: 1200px wide, Greater than 768px wide *****/
+@media all and (max-width: 1200px) and (min-width: 768px) {
 	/***** NAVIGATION *****/
 	nav {
 		#nav {
@@ -300,7 +316,8 @@
                   width:100px !important;
              }
 			a {
-				width: 170px !important;
+				padding: 0 20px;
+				width: auto;
 				font-size: .75em;
 				border: none;
 
