@@ -244,15 +244,15 @@
 			width: 100% !important;
 			text-align:center;
 			li {
-				width: 105px;
+				width: 90px;
 				a {
-					width: 105px !important;
-					font-size: .9em;
+					width: 90px !important;
+					font-size: 1em;
 					border: none;
                                                   
 					.icon {
 						margin: 0 auto !important;
-						font-size: 1.3em;
+						font-size: 1em;
 					}
 				
 					span {
@@ -287,13 +287,13 @@
 		
 	/***** ABOUT *****/
 	.pic-container {
-		width: 100% !important;
 		padding: 0 !important;
-		
+		max-width: 400px !important;
+
 		.mugshot {
 			width: 170px;
 			img {
-				max-width: 70%;
+				max-width: 75%; 
 			}/*img*/
 		}/*mugshot*/
 	}/*pic-contianer*/
@@ -403,12 +403,14 @@
 
 } /*end media query*/
 
-@media all and (min-width: 1343px) {
+@media all and (min-width: 1400px) {
 	/***** PORTFOLIO *****/
 	#portfolio-front {	
 		.thumbnails {
 			width: 100%;
+                         max-width: 1300px;
 			img {
+
 				
 			}/*img*/
 		}/*thumbnails*/
