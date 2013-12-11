@@ -1,0 +1,14 @@
+/* Background CSS */
+
+.background-carto {
+
+            background: url("../img/carto.png") repeat;
+            background-attachment: fixed;
+ }
+
+ .background-map {
+
+            background: url("../img/map.jpg") no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+ }
