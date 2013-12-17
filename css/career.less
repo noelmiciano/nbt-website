@@ -10,36 +10,54 @@
 /********** END LESS VARIABLES *********/
 
 .career {
-	margin: 5em auto;
-	h2 {
-		color: @red-color;
-		font-weight: 700;
-	}/*h2*/
-	
-	p {
-		margin: 7px 0;
-		padding: 0;
-	}/*p*/
-	
-	h3 {
-		margin: 0;
-	}/*h3*/
-		
-	ul {
-		margin: 0;
-		padding: 0;
+	margin: 7em auto;
+	padding: 0;
+	width: 90%;
+	img {
+		height: auto;
 		display: inline-block;
+		margin: 0 2em 0 0;
+		padding: 0;
 		vertical-align: top;
-			
-		li {
-			margin: 0 35px;
-			padding: 0;
+	}/*img*/
+	.text-container {
+		width: 75%;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		vertical-align: top;
+		h2 {
 			color: @red-color;
+			font-weight: 700;
+		}/*h2*/
+	
+		p {
+			margin: 7px 0;
+			padding: 0;
+		}/*p*/
+	
+		h3 {
+			margin: 0;
+		}/*h3*/
+		
+		.skillset-container {
+			margin: 2em 0;
+			ul {
+				margin: 0;
+				padding: 0;
+				display: inline-block;
+				vertical-align: top;
 			
-			span {
-				color: #000;
-			}/*span*/
-		}/*li*/
-	}/*ul*/
-				
+				li {
+					margin: 0 35px;
+					padding: 0;
+					color: @red-color;
+			
+					span {
+						color: #000;
+					}/*span*/
+				}/*li*/
+			}/*ul*/
+		}/*skillset-container*/
+	}/*text-container*/		
 }/*career*/
